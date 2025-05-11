@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+/* Hero */
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.hero-img {
+    width: 50%;
+    height: 100%;
+}
+.hero-img > img {
+    width: 100%;
+    min-height: 100%;
+    flex: 1;
+}
+.hero-title {
+    flex: 1;
+    align-content: center;
+    margin-left: 100px;
+}
+.hero-title > h1 {
+    font-size: 5rem;
+    color: #004138;
+}
+.hero-title > p {
+    font-size: 3rem;
+    color: #017868;
+}
+.hero-title > button {
+    width: 400px;
+    height: 50px;
+    background-color: #004138;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 12px;
+    border: none;
+    margin-top: 100px;
+}
+.hero-title > button:hover {
+    background-color: #017868;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+/* Resume */
+.resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto 100px auto;
+}
+.resume-img > img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.resume-desc {
+    width: 50%;
+    text-align: center;
+    margin: 50px auto;
+}
+.resume-title {
+    font-size: 2.5rem;
+    color: #004138;
+    margin-bottom: 20px;
+}
+.resume-desc > p {
+    font-size: 1.5rem;
+}
+/* Projects */
+.projects {
+    width: 100%;
+}
+.projects > .projects-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #004138;
+    margin-bottom: 50px;
+}
+.projects-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 50px 100px;
+    gap: 50px;
+}
+.project > img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #004138;
+}
+.project-title {
+    font-size: 1.5rem;
+    color: #000;
+    margin: 20px 0;
+}
+.project-desc {
+    font-size: 1rem;
+    color: #585757;
+    line-height: 1.5;
+}
+/* About */
+.about {
+    width: 100%;
+}
+.about-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #004138;
+    margin: 50px auto;
+}
+.about-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 300px;
+    gap: 50px;
+}
+.item-title {
+    font-size: 1.5rem;
+    color: #000;
+    margin: 20px auto;
+}
+.item-desc {
+    font-size: 1rem;
+    color: #585757;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+/* Contact */
+.contact {
+    width: 100%;
+    margin-bottom: 100px;
+}
+.contact-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #004138;
+    margin-bottom: 50px;
+}
+.contact-form {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   width: 100%;
+   align-items: center;
+}
+.contact-form > * {
+    width: 60%;
+    border: 2px solid #004138;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 1rem;
+}
+.contact-btn {
+    text-align: center;
+    width: 60%;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #004138;
+    color: #fff;
+    margin: 10px 206px;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+}
+.contact-btn:hover {
+    font-size: 1.2rem;
+    background-color: #017868;
+    cursor: pointer;
+}
+.fotter {
+    background-color: #004138;
+    height: 200px;
+}
+.fotter-items {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    color: #fff;
+    font-size: 1.2rem;
+    justify-content: center;
+}
+
+.fotter-items > li {
+    padding: 60px;
+}
+.fotter-items > li:hover {
+    color: #017868;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.fotter > p {
+    text-align: center;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 20px;
+}
+@media (max-width: 600px) {
+    .hero {
+        display: none;
+    }
+    .resume {
+        margin: 50px auto;
+    }
+    .projects-items , .about-items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .item-desc {
+        margin-bottom: 10px;
+    }
+    .contact-btn {
+        margin: 10px 95px;
+    }
+    .fotter-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }  
+    .fotter-items > li {
+        padding: 10px;
+    }
+
+}
